@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Red Hat Display", sans-serif;
+  background-color: hsl(225deg, 100%, 94%);
+  background-image: url(../images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+}
+
+.summary-card {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(255deg, 100%, 100%);
+  text-align: center;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+.summary-card__title {
+  margin: 2rem;
+  color: hsl(223deg, 47%, 23%);
+}
+.summary-card__title h1 {
+  font-size: 2.2rem;
+  font-weight: 900;
+}
+.summary-card__text {
+  margin: 0 3rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+  color: hsl(224deg, 23%, 55%);
+}
+.summary-card__img img {
+  width: 100%;
+}
+.summary-card__plan {
+  margin: 2rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(225deg, 100%, 98%);
+  border-radius: 1rem;
+}
+.summary-card__plan-chosen-plan {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+.summary-card__plan-price {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: hsl(224deg, 23%, 55%);
+}
+.summary-card__plan-btn {
+  color: hsl(245deg, 75%, 52%);
+  font-size: 1.3rem;
+  text-decoration: underline;
+  font-weight: 900;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.summary-card__plan-btn:hover {
+  color: #766cea;
+}
+.summary-card__btn {
+  margin: 2rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid transparent;
+  font-size: 1.4rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+.summary-card__btn--proceed {
+  color: hsl(255deg, 100%, 100%);
+  background-color: hsl(245deg, 75%, 52%);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.summary-card__btn--proceed:hover {
+  background-color: #766cea;
+}
+.summary-card__btn--cancel {
+  margin-top: 0;
+  background: none;
+  color: hsl(224deg, 23%, 55%);
+}
+.summary-card__btn--cancel:hover {
+  color: hsl(223deg, 47%, 23%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+@media (min-width: 576px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../images/pattern-background-desktop.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .summary-card {
+    max-width: 400px;
+  }
+}/*# sourceMappingURL=main.css.map */
